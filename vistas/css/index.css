@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+/*ID*/
+#contenedor-principal{
+    width: 100vw;
+}
+#inicioframe{
+    height: 100%;
+    width: 100%;
+}
+#btnScheme{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-color: rgba(255, 255, 255, 0.85);
+    border-style: solid;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 20%;
+    padding: 0.8vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-size: 2vw;
+    text-shadow: 0;
+    border-width: 0.102vw;
+}
+/*CLASS*/
+.superior{
+    background-color: blue;
+    height: 78vh;
+}
+.intermedio{
+    background-color: black;
+    height: 11vh;
+}
+.inferior{
+    background-color: red;
+    height: 11vh;
+}
+.position-down{
+    position: sticky;
+    left: 100%;
+    top: 100%;
+    margin-right: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+.position-up{
+    position: sticky;
+    left: 100%;
+    margin-right: 1.2vh;
+    margin-top: 1.2vh;
+}
+.btnInvisible{
+    visibility: hidden;
+}
+.btnVisible{
+    visibility: visible;
+}
