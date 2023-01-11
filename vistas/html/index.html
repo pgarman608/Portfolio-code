@@ -8,25 +8,30 @@
         <title>Portfolio | Pablo</title>
     </head>
     <body >
-        <!--DIV SUPERIOR-->
         <div id="contenedor-principal" class="superior">
             <div id="contenedor1">
-                <iframe id="inicioframe" src="inicio.html" frameborder="0" scrolling="no"></iframe>
+                <iframe id="inicioframe" src="inicio.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
             </div>
-            <button id="btnScheme" class="position-down btnVisible">⇃</button>
+            <div id="btndiv1">
+                <button id="btnScheme" class="position-down">⇃</button>
+            </div>
         </div>
-        <!--DIV INTERMEDIO-->
         <div id="contenedor-principal" class="intermedio">
-            <button id="btnScheme" class="position-up btnInvisible">↾</button>
-            
-            <button id="btnScheme" class="position-down btnInvisible">⇃</button>
-        </div>
-        <!--DIV INFERIOR-->
-        <div id="contenedor-principal" class="inferior">
-            <div id="contenedor3">
-                <iframe id="inferiorframe" src="inferior.html" frameborder="0" scrolling="no"></iframe>
+            <div id="btndiv2">
+                <button id="btnScheme" class="position-up btnInvisible">↾</button>
             </div>
-            <button id="btnScheme" class="position-up btnInvisible">↾</button>
+            <div>
+
+            </div>
+            <div id="btndiv1">
+                <button id="btnScheme" class="position-down btnInvisible">⇃</button>
+            </div>
+        </div>
+        <div id="contenedor-principal" class="inferior">
+            <div id="btndiv2">
+                <button id="btnScheme" class="position-up btnInvisible">↾</button>
+            </div>
+            <iframe src="inferior.html" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
         </div>
         <script src="../../controladores/index.js"></script>
     </body>

@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "rishgular";
+    src: url("../../res/Fuentes/rishgular/rishgular.woff2") format("woff2"),
+        url("../../res/Fuentes/rishgular/rishgular.woff") format("woff");
+}
+@font-face {
+    font-family: "NeutronsDemo" ;
+    src: url("../../res/Fuentes/neutrons/NeutronsDemoRegular.woff2") format("woff2"),
+        url("../../res/Fuentes/neutrons/NeutronsDemoRegular.woff") format("woff");
+}
+@font-face {
+    font-family: "exthing";
+    src: url("../../res/Fuentes/exthing/exthing.woff2") format("woff2"),
+        url("../../res/Fuentes/exthing/exthing.woff") format("woff");
+}
 p{
     margin: 0;
 }
@@ -7,13 +22,19 @@ body{
     height: 97vh;
 }
 #imginicio{
-    position: relative;
     top: 28vh;
     left: 10.5vw;
     width: 15vw;
     height: 15vw;
 }
+#nomApe{
+    display: flex;
+    flex-direction: column;
+}
 #background{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     height: 100%;
     background: repeating-linear-gradient(
@@ -29,41 +50,31 @@ body{
     border-color: black;
 }
 #posPablo{
-    position: absolute;
-    top: 35.5vh;
-    left: 33vw;
+    line-height: 56px;
 }
 #posGarcia{
-    position: absolute;
-    top: 43vh;
-    left: 33vw;
+    line-height: 56px;
 }
 #posManzano{
-    position: absolute;
-    top: 50vh;
-    left: 33vw;
+    line-height: 56px;
 }
 #flecha{
-    position: absolute;
-    top: 35vh;
-    left: 53vw;
     max-width: fit-content;
     max-height: fit-content;
     font-size: 160px;
     color: #faef8e;
-    font-family: "rishgular try",monospace;
+    font-family: "rishgular",monospace;
     font-weight: 800;
 }
 #texto{
-    position: absolute;
-    top: 37.9vh;
-    left: 61.5vw;
-    font-family: "rishgular try",monospace;
+    font-family: "rishgular",monospace;
     font-size: 36px;
     color: #faef8e;
 }
+
 .nombre{
-    font-family: "Neutrons Demo",monospace;
+    font-family: "exthing",monospace;
     font-size: 60px;
     color: #faef8e;
 }
+
