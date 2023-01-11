@@ -14,6 +14,7 @@ let bgInferior = background[2]
 //Contenedores de informacion
 let cont1 = document.getElementById("contenedor1")
 let frame1 = document.getElementById("inicioframe")
+let frame3 = document.getElementById("frameInferior")
 botonSuperior.onclick = async function() {
     botonSuperior.classList.add("botonout")
     frame1.classList.add("antvoff")
@@ -90,15 +91,21 @@ botonIntermedioDos.addEventListener("click",async function(evt) {
         await sleep(6)
     }
     botonInferior.style.visibility = "visible"
+    frame3.style.visibility = "visible"
     botonInferior.classList.add("botonin")
+    frame3.classList.add("antvon")
     await sleep(710)
     botonInferior.classList.remove("botonin")
+    frame3.classList.remove("antvon")
 })
 botonInferior.addEventListener("click",async function(evt) {
+    frame3.classList.add("antvoff")
     botonInferior.classList.add("botonout")
-    await sleep(220)
+    await sleep(710)
     botonInferior.classList.remove("botonout")
+    frame3.classList.remove("antvoff")
     botonInferior.style.visibility = "hidden"
+    frame3.style.visibility = "hidden"
     let tamanioInferior = 78
     let tamanioIntermedio = 11
     for (let index = 0; index < 67; index = index + 0.5) {
@@ -108,13 +115,13 @@ botonInferior.addEventListener("click",async function(evt) {
         bgInferior.style.height = tamanioInferior+"vh"
         await sleep(6)
     }
-    botonIntermedioUno.classList.add("botonin")
-    botonIntermedioDos.classList.add("botonin")
-    await sleep(220)
-    botonIntermedioUno.classList.remove("botonin")
-    botonIntermedioDos.classList.remove("botonin")
     botonIntermedioUno.style.visibility = "visible"
     botonIntermedioDos.style.visibility = "visible"
+    botonIntermedioUno.classList.add("botonin")
+    botonIntermedioDos.classList.add("botonin")
+    await sleep(700)
+    botonIntermedioUno.classList.remove("botonin")
+    botonIntermedioDos.classList.remove("botonin")
 })
 
 function getElementsById(elementID){
